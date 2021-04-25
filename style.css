@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 body {
@@ -12,12 +13,10 @@ body {
 
 img {
     width: 100%;
-    border-radius: 16px;
+    border-radius: 12px;
 }
 
 h1 {
-    text-align: center;
-
     font-size: 24px;
     font-weight: 600;
 
@@ -27,12 +26,42 @@ h1 {
 }
 
 h2 {
-    text-align: center;
-
     font-size: 14px;
     font-weight: 600;
 
     color: #A9A9A9;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    
+    color: #4E5150;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 600;
+    
+    color: #BDBDBD;
+
+    margin: 0;
+}
+
+footer {
+    color: #B9BDCF;
+    margin: 24px;
+    font-size: 14px;
+}
+
+.profile-info {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.information-on-person {
+    margin-bottom: 24px;
 }
 
 .profile-image {
@@ -40,4 +69,102 @@ h2 {
     margin: 0 auto;
     padding: 40px;
     padding-bottom: 0px;
+}
+
+.profile-statistics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin: 0 auto;
+}
+
+.statistics-info {
+    background-color: #E5E5E5;
+    border-radius: 12px;
+    
+    width: 100px;
+
+    padding: 14px;
+    margin: 0 auto;
+}
+
+.gallery-images {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 64px;
+    padding-bottom: 240px;
+
+    display: grid;
+    gap: 20px;
+
+    grid-template-areas: 
+        "one two two"
+        "three three four"
+        "five six four";
+}
+
+.gallery-images img {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 10px;
+    }
+
+    h4 {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .profile-info {
+        width: 125%;
+    }
+
+    .profile-image {
+        width: 180px;
+    }
+
+    .statistics-info {
+        width: 78px;
+    }
+
+    .gallery-images {
+        width: 125%;
+
+        padding: 24px;
+        padding-bottom: 20px;
+    }
 }
